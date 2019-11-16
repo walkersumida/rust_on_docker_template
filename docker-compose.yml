@@ -3,6 +3,7 @@ version: "3"
 services:
   rust:
     build: .
+    entrypoint: sh /usr/src/myapp/run.sh
     tty: true
     volumes:
       - ./src:/usr/src/myapp
